@@ -1,0 +1,17 @@
+# Streamlit App Requirements
+# For the interactive essay scoring demo
+
+# Streamlit
+streamlit==1.29.0
+
+# Core ML (lighter versions for deployment)
+torch==1.12.1
+transformers==4.21.3
+
+# Data processing
+numpy==1.23.1
+pandas==1.4.3
+
+# Optional: For actual model inference (if deploying real models)
+# sentencepiece==0.1.97
+# tokenizers==0.12.1

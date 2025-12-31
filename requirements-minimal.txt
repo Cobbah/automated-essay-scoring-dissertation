@@ -1,0 +1,27 @@
+# ============================================================================
+# AUTOMATED ESSAY SCORING - MINIMAL DEPENDENCIES
+# Quick Setup Version
+# ============================================================================
+
+# Essential packages only - faster installation
+
+# Core Framework
+torch>=1.12.1
+transformers>=4.21.3
+
+# Data Processing
+pandas>=1.4.3
+numpy>=1.23.1
+scikit-learn>=1.1.2
+
+# Embeddings
+gensim>=4.2.0
+
+# Utilities
+tqdm>=4.64.0
+
+# ============================================================================
+# This minimal version installs only the essential packages needed to run
+# the training scripts. For full features (visualization, explainability),
+# use requirements.txt instead.
+# ============================================================================
