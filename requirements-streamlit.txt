@@ -1,17 +1,13 @@
-# Streamlit App Requirements
-# For the interactive essay scoring demo
+# Streamlit App Requirements - Cloud Deployment
+# Minimal dependencies for demo app (simulated scoring)
 
-# Streamlit
-streamlit==1.29.0
+# Streamlit framework
+streamlit>=1.29.0
 
-# Core ML (lighter versions for deployment)
-torch==1.12.1
-transformers==4.21.3
+# Data processing (lightweight)
+numpy>=1.23.0
+pandas>=1.4.0
 
-# Data processing
-numpy==1.23.1
-pandas==1.4.3
-
-# Optional: For actual model inference (if deploying real models)
-# sentencepiece==0.1.97
-# tokenizers==0.12.1
+# Note: PyTorch and Transformers are NOT needed for the demo version
+# The app uses simulated scoring based on essay characteristics
+# This keeps deployment fast and free on Streamlit Cloud
