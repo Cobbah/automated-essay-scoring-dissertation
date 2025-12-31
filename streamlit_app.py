@@ -6,10 +6,17 @@ University of Sunderland
 """
 
 import streamlit as st
-import torch
 import numpy as np
-from transformers import BertTokenizer, RobertaTokenizer
 import json
+
+# Optional ML imports - not needed for demo version with simulated scoring
+try:
+    import torch
+    from transformers import BertTokenizer, RobertaTokenizer
+    ML_AVAILABLE = True
+except ImportError:
+    ML_AVAILABLE = False
+    # Demo works without these imports
 
 # Page configuration
 st.set_page_config(
